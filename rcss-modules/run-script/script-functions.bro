@@ -4,10 +4,10 @@ module ScriptFunctions;
 #Export block contains everything that will need to be used by other Bro files
 
 export {
-  global run_script: function(): count;
+  global run_script: function(): int;
 }
 
-function run_script(): count {
+function run_script(): int {
   #Execute a script on the local server and pass a Bro script variable to the script as a command line argument
   local result = "w000t";
   Exec::run([$cmd="/tmp/poc.sh "+result]);
@@ -21,6 +21,6 @@ function run_script(): count {
     return 0;
   }
   else {
-    return -1;
+    return 1;
   }
 }
