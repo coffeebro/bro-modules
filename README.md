@@ -8,6 +8,6 @@ If you're using SecurityOnion, the entire repo (or a subset of groups) can be cl
 
 Importing a module is as simple appending the appropriate @load statement in local.bro.  This file is located at /opt/bro/share/bro/site/local.bro (but, again, may differ based on your deployment.)  Once you locate this file, the @load command will look something like this:
 
-@load bro-modules/<group>/<module> (i.e. @load bro-modules/rcss-modules/example-module)
+@load bro-modules/\<group\>/\<module\> (i.e. @load bro-modules/rcss-modules/example-module)
 
 ...assuming you clone the entire repo.  If you only clone a single group, omit the 'bro-modules' portion of the @load statement.
