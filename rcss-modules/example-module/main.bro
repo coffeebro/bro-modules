@@ -1,5 +1,5 @@
 #This is needed to use our custom Notice type
-@load rcss-scripts/example-script/custom-notices
+@load rcss-modules/example-script/custom-notices
 
 #This event occurs when Bro starts
 event bro_init() {
